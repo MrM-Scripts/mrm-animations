@@ -161,6 +161,8 @@ function PlayAnimation(dict, anim)
         end
         -- play the animation
         TaskPlayAnim(player, dict, anim, 8.0, 8.0, -1, 1, 0, false, false, false)
+        -- print the dictionary and animation to the console
+        print("Dict: " .. dict .. " | Anim: " .. anim)
     else
         inAnim = true
         previousAnim = anim
@@ -172,6 +174,8 @@ function PlayAnimation(dict, anim)
         end
         -- play the animation
         TaskPlayAnim(player, dict, anim, 8.0, 8.0, -1, 1, 0, false, false, false)
+        -- print the dictionary and animation to the console
+        print("Dict: " .. dict .. " | Anim: " .. anim)
     end
 end
 
