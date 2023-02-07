@@ -1,10 +1,10 @@
 fx_version 'adamant'
 game 'gta5'
 
-name "mth-animations"
-description "Developer script to play every GTA animations"
-author "Mathu_lmn"
-version "1.1.0"
+name "mrm-animations"
+description "Developer script to check every GTA animation."
+author "Mathu_lmn & MrMRVLS"
+version "1.2.0"
 
 files {
     'animDictsCompact.json'
@@ -29,4 +29,4 @@ server_scripts {
 
 shared_script {
     'config.lua',
-  }
+}
