@@ -1,38 +1,34 @@
-# Description 📃 :
+# Developer script to check every GTA animation. 🥀🐱‍💻
 
-👋 Hey guys, I've always wanted to easily test the animations in Fivem and I never really found the script that fits for what I want. So I decided to make my own and today I'm releasing it for free !
+👋🏽 **Hey guys, I've always wanted to easily test the animations in Fivem and I never really found the script that fits for what I want. Then I found [Mathu-Imn](https://github.com/Mathu-lmn/)'s script. So I decided to change it as I need and keep it public for everyone. Cheers!** 🍻
 
+## Features 💼 :
+* 🔍 Search button to specify what you're looking for.
+* 🌳 STANDALONE. → _It means this works on any framework. (QB, ESX, Whatever)_
+* 🧤 Change command permissions to **Admin ONLY**.
+* 📠 Prints dictionary and clip on console.
+* 🎁 Up to date animations list.
 ---
-## Usage 🛠️ :
+## Installation 🐌 :
 
-To use the resource, download it, put the `mth-animations` folder in your main resources folder.
-Add `start mth-animations` to your server.cfg.
+To use the resource, download it, put the `mrm-animations` folder in your main resources folder.
+Add `ensure mrm-animations` to your server.cfg.
 Then, once you're in game, use the command `/animations` to toggle the menu.
 
 <br>
 
 ### Config.lua: 
-> By changing this to `true` will make the `/animations` command only accessible for **server admins**.
 ```lua
+-- false = everyone can use the animation menu
 Config.AdminOnly = false 
+-- print the dictionary and animation to the console
+Config.PrintConsole = true 
 ```
----
-## Features ✨ :
-* Accessible json file for all animations dict and names
-* Search button to specify what you're looking for
-* STANDALONE : this means that you don't need any dependencies to start this script on your server
-* Change permissions of the command
-* Up to date animations list
-* Easy to use
+> By changing `Config.AdminOnly` to `true` will make the `/animations` command only accessible for **server admins**.
 
 ---
 
-*Demo 👀 :*
+## Credits 🍉:
+Thanks [@Mathu-Imn](https://github.com/Mathu-lmn/mth-animations) for the original animation menu. 💖
 
-🎥 [Video](https://streamable.com/yfl6us): https://streamable.com/yfl6us
-
-**Link to the resource :** [mathu-lmn/mth-animations (github.com)](https://github.com/Mathu-lmn/mth-animations)
-
-Feel free to open an Issue or make a PR to help me improve this resource !
-
-*PS : I used this file to get the animations list so huge thanks to @DurtyFree : [gta-v-data-dumps](https://github.com/DurtyFree/gta-v-data-dumps)*
+Thanks [@DurtyFree](https://github.com/DurtyFree) for the animations list. 💦
