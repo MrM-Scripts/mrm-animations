@@ -162,6 +162,7 @@ function PlayAnimation(dict, anim)
         -- play the animation
         TaskPlayAnim(player, dict, anim, 8.0, 8.0, -1, 1, 0, false, false, false)
         PrintConsole(dict, anim)
+        CopyToClipboard(dict, anim)
     else
         inAnim = true
         previousAnim = anim
@@ -174,14 +175,27 @@ function PlayAnimation(dict, anim)
         -- play the animation
         TaskPlayAnim(player, dict, anim, 8.0, 8.0, -1, 1, 0, false, false, false)
         PrintConsole(dict, anim)
+        CopyToClipboard(dict, anim)
     end
 end
 
 
 function PrintConsole(dict, anim)
     -- print the dictionary and animation to the console
-    if Config.PrintConsole then
+    if Config.PrintToConsole then
         print('Dict: "' .. dict .. '" | Clip: "' .. anim .. '"')
+    end
+end
+
+
+function CopyToClipboard(dict, anim)
+    if Config.CopyToClipboard then
+        local message = {
+            dictionary = dict,
+            clip = anim
+        }
+        -- sends the dictionary and animation/clip to the index.html
+        SendNuiMessage(json.encode(message))
     end
 end
 
