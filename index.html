@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Copy Animation Details by MrMRVLS 🦄</title>
+    </head>
+
+    <body>
+        <script 
+        src="https://code.jquery.com/jquery-3.6.3.js" 
+        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" 
+        crossorigin="anonymous">
+        </script>
+
+        <script>
+            window.addEventListener("message", handleNuiMessages);
+
+            function handleNuiMessages(event) {
+                var dictionaryName = event.data.dictionary;
+                var clipName = event.data.clip;
+                var str = '{Dictionary: "' + dictionaryName + '", Clip: "' + clipName + '"}';
+                copyTextToClipboard(str);
+            }
+
+            function copyTextToClipboard(text) {
+                var copyFrom = $('<textarea/>');
+                copyFrom.text(text);
+                $('body').append(copyFrom);
+                copyFrom.select();
+                document.execCommand('copy');
+                copyFrom.remove();
+            }
+        </script>
+    </body>
+</html>
