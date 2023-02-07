@@ -161,6 +161,7 @@ function PlayAnimation(dict, anim)
         end
         -- play the animation
         TaskPlayAnim(player, dict, anim, 8.0, 8.0, -1, 1, 0, false, false, false)
+        PrintConsole(dict, anim)
     else
         inAnim = true
         previousAnim = anim
@@ -172,8 +173,18 @@ function PlayAnimation(dict, anim)
         end
         -- play the animation
         TaskPlayAnim(player, dict, anim, 8.0, 8.0, -1, 1, 0, false, false, false)
+        PrintConsole(dict, anim)
     end
 end
+
+
+function PrintConsole(dict, anim)
+    -- print the dictionary and animation to the console
+    if Config.PrintConsole then
+        print('Dict: "' .. dict .. '" | Clip: "' .. anim .. '"')
+    end
+end
+
 
 function KeyboardInput(text)
 	local result = nil
