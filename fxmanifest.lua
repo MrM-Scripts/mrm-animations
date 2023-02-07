@@ -4,10 +4,14 @@ game 'gta5'
 name "mrm-animations"
 description "Developer script to check every GTA animation."
 author "Mathu_lmn & MrMRVLS"
-version "1.2.0"
+version "1.3.0"
+
+
+ui_page 'index.html'
 
 files {
-    'animDictsCompact.json'
+    'animDictsCompact.json',
+    'index.html',
 }
 
 client_scripts {
