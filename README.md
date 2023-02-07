@@ -6,6 +6,7 @@
 * 🔍 Search button to specify what you're looking for.
 * 🌳 STANDALONE. → _It means this works on any framework. (QB, ESX, Whatever)_
 * 🧤 Change command permissions to **Admin ONLY**.
+* 💾 Copy the dictionary and animation/clip to the **Clipboard**.
 * 📠 Prints dictionary and clip on console.
 * 🎁 Up to date animations list.
 ---
@@ -22,7 +23,9 @@ Then, once you're in game, use the command `/animations` to toggle the menu.
 -- false = everyone can use the animation menu
 Config.AdminOnly = false 
 -- print the dictionary and animation to the console
-Config.PrintConsole = true 
+Config.PrintToConsole = false 
+-- copy the dictionary and animation/clip to the Clipboard
+Config.CopyToClipboard = true
 ```
 > By changing `Config.AdminOnly` to `true` will make the `/animations` command only accessible for **server admins**.
 
@@ -32,3 +35,5 @@ Config.PrintConsole = true
 Thanks [@Mathu-Imn](https://github.com/Mathu-lmn/mth-animations) for the original animation menu. 💖
 
 Thanks [@DurtyFree](https://github.com/DurtyFree) for the animations list. 💦
+
+Thanks [@SaSiNO97](https://github.com/SaSiNO97) for the `CopyToClipboard` inspiration. 🍷
