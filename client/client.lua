@@ -54,7 +54,7 @@ Citizen.CreateThread(function()
 end)
 
 
-RegisterNetEvent('mth-animations:menu', function()
+RegisterNetEvent('mrm-animations:menu', function()
     OpenAnimationsMenu()
 end)
 
